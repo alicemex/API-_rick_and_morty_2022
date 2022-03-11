@@ -1,38 +1,39 @@
-.App {
+.Content {
+display:flex;
+flex-wrap: wrap;
+width:100vw;
+
+}
+
+.Hero{
+  width:100vw;
+  height: 30rem;
+  background-position: 0px -5rem; 
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-image: url("https://a-static.besthdwallpaper.com/rick-y-morty-rompiendo-mal-papel-pintado-2560x1600-55019_7.jpg");
+}
+.coverHero{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width:100%;
+  height: 30rem;
+  display:flex;
+  position:absolute;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+ 
+  background-color: rgba(0,0,0,0.5);
+}
+.SearchBox{
+  position:relative;
+  margin:auto;
 }
 
-.App-link {
-  color: #61dafb;
+.Card{
+  background-color: aquamarine;
+  min-height: 10rem;
+  min-width:33vw;
+  margin:auto;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
