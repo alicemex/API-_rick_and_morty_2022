@@ -26,16 +26,27 @@ if(location.residents?.length >0 ){
             </div>
             
             
+            <div className='UnderHero'>
+           <ul>
+               <li>
+                    Location name : {location.name}            
+               </li>
+               <li>
+               Location ID: {location.id}
+               </li>
+               <li>Location Type: {location.type}</li>
+               <li>
+               Dimention: {location.dimension}</li>
+
+                   
+           </ul>
+            </div>
             <div className='Content'>
-            <h2>Location name : {location.name}</h2>
-            <h2>Location ID: {location.id}</h2>
-            <h2>Location Type: {location.type}</h2>
-            <h2>Dimention: {location.dimension}</h2>
-            <p>Residents: {location.residents?.length}</p>
-           {population ? (
-               <ResidentsList residentAPI = {location.residents}></ResidentsList>
-           ):
-           <p>No population Here</p>}
+            <h2>Residents: {location.residents?.length}</h2>
+                    {population ? (
+                        <ResidentsList residentAPI = {location.residents}></ResidentsList>
+                    ):
+                    <p>No population Here</p>}
             </div>
         </>
     );

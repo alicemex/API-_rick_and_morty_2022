@@ -12,13 +12,16 @@ const [resident, setResident] = useState({});
     }, [ residentUrl]);
     return (
         <div className='Card'> 
-          <p> Name:  {resident.name}</p>
-            <p> Status: {resident.status}</p>
-            <p>Specie:{resident.species}</p>
-            <p>Origin: {resident.origin?.name}</p>
-            <p>episodes: {(resident.episode?.length)}</p>
-            <img alt="character" src={resident.image}></img>
-        </div>
+            <ul>
+            <li> Name:  {resident.name}</li>
+                <li> Status: {resident.status}</li>
+                <li>Specie:{resident.species}</li>
+                <li>Origin: {resident.origin?.name}</li>
+                <li>episodes: {(resident.episode?.length)}</li>
+                <li><img alt="character" src={resident.image}></img>
+            </li>
+            </ul>
+         </div>
     );
 };
 
